@@ -1,38 +1,11 @@
 div {
     width: 400px;
     height: 300px;
-    margin-bottom: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .boolean {
-    background-color: blue;
-}
-
-.number {
-    background-color: red;
-}
-
-.string {
-    background-color: coral;
-}
-
-.null {
-    background-color: yellow;
-}
-
-.undefined {
-    background-color: crimson;
-}
-
-.object {
-    background-color: forestgreen;
 }
 
 .parent {
     width: 100%;
-    height: auto;
-    flex-flow: column nowrap;
 }
