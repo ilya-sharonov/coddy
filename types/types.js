@@ -8,6 +8,8 @@ function createBlock(name, className) {
     `;
 }
 
+// piece of code that fn(input) -> output
+
 (function() {
     const parent = document.querySelector('.parent');
     const types = ['boolean', 'number', 'string', 'undefined', 'null', 'object'];
