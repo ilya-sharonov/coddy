@@ -1,0 +1,81 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column wrap;
+}
+
+h1 {
+    margin-bottom: 40px;
+}
+
+.game_field {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    column-gap: 0px;
+    row-gap: 0px;
+}
+
+.game_field div {
+    width: 100px;
+    height: 100px;
+    border: 1px solid #000000;
+}
+
+.game_field div {
+    border-right: none;
+    border-bottom: none;
+    position: relative;
+}
+
+.game_field div:first-child {
+    border-top: none;
+    border-left: none;
+}
+
+.game_field div:nth-child(2),
+.game_field div:nth-child(3) {
+    border-top: none;
+}
+
+.game_field div:nth-child(4),
+.game_field div:nth-child(7) {
+    border-left: none;
+}
+
+.game_field div div.o_mark {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    width: 60px;
+    height: 60px;
+    border: 5px solid blue;
+    border-radius: 50%;
+}
+
+.game_field div div.x_mark {
+    position: absolute;
+    left: 20px;
+    top: 15px;
+    width: 60px;
+    height: 60px;
+}
+
+.game_field div div.x_mark::before,
+.game_field div div.x_mark::after {
+    position: absolute;
+    content: ' ';
+    height: 80px;
+    width: 5px;
+    background-color: red;
+    left: 25px;
+}
+
+.game_field div div.x_mark::before {
+    transform: rotate(45deg);
+}
+
+.game_field div div.x_mark::after {
+    transform: rotate(-45deg);
+}
